@@ -31,7 +31,6 @@ const SearchBar = ({ onSubmit }) => {
           placeholder="Search images and photos"
         />
         <FaSearch className={styles.searchIcon} onClick={handleSubmit} />{" "}
-        {/* Ikona lupy */}
       </form>
     </header>
   );

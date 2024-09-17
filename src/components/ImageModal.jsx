@@ -11,9 +11,7 @@ const ImageModal = ({ image, onClose }) => {
       className={styles.modal}
       overlayClassName={styles.overlay}
     >
-      <img src={image.urls.regular} alt={image.alt_description} />
-      <p>Author: {image.user.name}</p>
-      <p>Likes: {image.likes}</p>
+      <img src={image.urls.regular} alt={image.alt_description} />{" "}
     </Modal>
   );
 };
