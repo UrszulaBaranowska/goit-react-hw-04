@@ -1,0 +1,40 @@
+.header {
+  background-color: #e0f7fa;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff;
+}
+
+.button {
+  display: none;
+}

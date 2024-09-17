@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import styles from "../styles/SearchBar.module.css";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = ({ onSubmit }) => {
   const [inputValue, setInputValue] = useState("");
@@ -21,7 +22,7 @@ const SearchBar = ({ onSubmit }) => {
 
   return (
     <header className={styles.header}>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <input
           className={styles.input}
           type="text"
@@ -29,7 +30,8 @@ const SearchBar = ({ onSubmit }) => {
           onChange={handleChange}
           placeholder="Search images and photos"
         />
-        <button type="submit">Search</button>
+        <FaSearch className={styles.searchIcon} onClick={handleSubmit} />{" "}
+        {/* Ikona lupy */}
       </form>
     </header>
   );
